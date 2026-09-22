@@ -1,0 +1,41 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agent-ab-tester"
+version = "0.1.0"
+description = "A/B test your AI agents with statistical rigor"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "Daniel López Orta", email = "daniellopezorta39@gmail.com" }]
+keywords = ["agent", "ab-testing", "experiment", "statistics", "llm", "evaluation"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["click>=8.0", "rich>=13.0"]
+
+[project.optional-dependencies]
+openai = ["openai>=1.0"]
+all = ["openai>=1.0"]
+dev = ["pytest>=8.0", "pytest-asyncio>=0.23", "ruff>=0.4"]
+
+[project.scripts]
+agent-ab = "agent_ab_tester.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/daniellopez882/agent-ab-tester"
+Repository = "https://github.com/daniellopez882/agent-ab-tester"
+
+[tool.ruff]
+target-version = "py310"
+line-length = 88
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
