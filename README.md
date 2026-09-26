@@ -228,7 +228,7 @@ agent-ab tasks list
 </div>
 
 ## Attribution
-This project is based on [Ismail-2001/agent-ab-tester](https://github.com/Ismail-2001/agent-ab-tester), licensed under the MIT License.
-Original author: Daniel Lopez Orta (daniellopezorta39@gmail.com); previously hosted at Ismail-2001/agent-ab-tester.
-Modifications in this repository are by Sami Ahmed (sami.ahmed@ztech.com.pk).
-The original LICENSE file and its copyright notice are preserved unchanged below.
+This repository is an unmodified copy of [Ismail-2001/agent-ab-tester](https://github.com/Ismail-2001/agent-ab-tester), imported on 2026-09-23. No code changes have been made yet.
+The code is licensed under the MIT License. The LICENSE file and its copyright notice ("Copyright (c) 2026 Daniel López Orta") are preserved unchanged.
+The upstream repository's commit history lists Daniel Lopez as the author. That history was not carried over into this import; see the upstream repository for it.
+Imported and maintained by [Sami123d](https://github.com/Sami123d). Any future changes will be listed under "Changes in this repository" below.
